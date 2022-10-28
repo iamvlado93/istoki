@@ -1,0 +1,29 @@
+@import "./header.scss";
+@import "./about.scss";
+@import "./flour.scss";
+@import "./uniqueness.scss";
+@import "./production.scss";
+@import "./production-gallery";
+@import "./distribution";
+@import "./contact-form";
+@import "./certificates";
+@import "./map";
+@import "./faq";
+@import "./footer";
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+span,
+a,
+p {
+  color: white;
+  text-decoration: none;
+}

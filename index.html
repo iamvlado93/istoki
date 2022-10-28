@@ -5,6 +5,378 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ISTOKI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/scss/main.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" defer src="index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <img class="logo" src="assets/logo.png" alt="logo" />
+        <h4>ISTOKI</h4>
+      </div>
+      <div class="header__links">
+        <li>
+          <a href="#">О нас</a>
+        </li>
+        <li>
+          <a href="#">Продукция</a>
+        </li>
+        <li>
+          <a href="#">Производство</a>
+        </li>
+        <li>
+          <a href="#">Сертификаты</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </div>
+
+      <button class="header__button">Связаться</button>
+    </header>
+
+    <!-- About -->
+
+    <section class="about">
+      <div class="about-container">
+        <h1 class="about__title">
+          Цельносмолотая мука из зерна наших проверенных партнеров. Производим
+          муку на мельницах с каменными жерновами из восточного Тироля (Австрия)
+        </h1>
+        <p class="about__text">
+          Наша мука - возврат к истокам. Сохраняем лучшее, что есть в зерне
+        </p>
+      </div>
+    </section>
+
+    <!-- Flour  -->
+
+    <section class="flour">
+      <div class="swiper mySwiper container">
+        <div class="swiper-wrapper content">
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="name-flour">
+                <h4 class="flour-title">Мука рисовая, цельносмолотая (500г)</h4>
+              </div>
+              <div class="image">
+                <img src="/assets/рисовая.png" alt="рисовая" />
+              </div>
+
+              <div class="name-flour">
+                <span class="flour-100g"
+                  >Пищевая ценность на 100г продукта:</span
+                >
+                <span class="flour-nutrients"
+                  >Белки - 7.2г, жиры - 1.4г, углеводы - 72.3г</span
+                >
+                <span class="flour-cal">1489.5кДж, 356ккал</span>
+              </div>
+
+              <div class="flour-text">
+                <p>
+                  Мука цельносмолотая рисовая изготавливается путем разового
+                  помола цельного зерна на жерновах. В результате получается
+                  продукт, богатый клетчаткой. Используется для выпечки блинов,
+                  печенья, хлебцев и азиатских сладостей, также ее используют
+                  для панировки овощей, рыбы и мяса, для приготовления домашней
+                  лапши, теста для пельменей. Рисовая мука делает выпечку более
+                  полезной и из-за отсутствия клейковины имеет рассыпчатую
+                  структуру. Изделия получаются аппетитно хрустящие, с шикарной
+                  корочкой.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="name-flour">
+                <h4 class="flour-title">
+                  Отруби пшеничные, цельносмолотые (400г)
+                </h4>
+              </div>
+              <div class="image">
+                <img src="/assets/отруби.png" alt="отруби" />
+              </div>
+
+              <div class="name-flour">
+                <span class="flour-100g"
+                  >Пищевая ценность на 100г продукта:</span
+                >
+                <span class="flour-nutrients"
+                  >Белки - 11г, жиры - 2г, углеводы - 65г</span
+                >
+                <span class="flour-cal">1306кДж, 312ккал</span>
+              </div>
+
+              <div class="flour-text">
+                <p>
+                  Отруби цельносмолотые пшеничные получают из зародышевой
+                  оболочки пшеничных зерен. Содержат витамины, микроэлементы,
+                  укрепляющие иммунитет и улучшающие обмен веществ, восполняют
+                  дефицит клетчатки в организме, нормализуют микрофлору
+                  кишечника. В них содержится большое количество пищевых волокон
+                  и ненасыщенных жирных кислот, а также незначительное
+                  количество калорий, в отличие от цельного зерна. Отруби
+                  пшеничные можно добавлять в каши, йогурты, салаты, печенье,
+                  хлеб и использовать в косметических целях.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="name-flour">
+                <h4 class="flour-title">
+                  Мука гречневая, цельносмолотая (500г)
+                </h4>
+              </div>
+              <div class="image">
+                <img src="/assets/пшеничная.png" alt="пшеничная" />
+              </div>
+
+              <div class="name-flour">
+                <span class="flour-100g"
+                  >Пищевая ценность на 100г продукта:</span
+                >
+                <span class="flour-nutrients"
+                  >Белки - 16г, жиры - 3.8г, углеводы - 18,6г</span
+                >
+                <span class="flour-cal">753.6кДж, 180ккал</span>
+              </div>
+
+              <div class="flour-text">
+                <p>
+                  Мука цельносмолотая гречневая необжаренная изготавливается
+                  путем разового помола цельного зерна на жерновах, без
+                  просеивания. Для помола используется зеленое зерно гречихи. В
+                  результате получается продукт, богатый клетчаткой, в котором
+                  сохраняются все полезные свойства зерна от зародыша до
+                  оболочки. Цельносмолотая гречневая мука богата аминокислотами,
+                  витаминами группы B, E и железом. Применяется в качестве
+                  ингредиента при выпечке хлебобулочных, кондитерских и
+                  кулинарных изделий, добавляется в смузи или супы, придавая им
+                  ни с чем несравнимый аромат и насыщенный вкус.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Uniqueness -->
+
+    <section class="uniqueness">
+      <h3 class="uniqueness__title">
+        «Уникальность нашей продукции - в способе её производства на
+        керамических жерновах, что в свою очередь наделяет муку уникальной
+        вкусовой палитрой и хлебопекарными свойствами.»
+      </h3>
+    </section>
+
+    <!-- Production -->
+
+    <section class="production">
+      <h3 class="production__text">
+        Мы используем только лучшие ингредиенты и современные техники
+        изготовления. Мука получена в результате разового помола зерна без
+        дополнительной обработки. Продукт относится к категории здорового
+        питания.
+      </h3>
+    </section>
+
+    <!-- Gallery -->
+
+    <section class="production-gallery">Gallery</section>
+
+    <!-- Distribution -->
+
+    <section class="distribution">
+      <h3 class="distribution__title">
+        Наша продукция представлена в магазинах здорового питания в областных
+        центрах РБ.
+      </h3>
+    </section>
+    <section class="contact-form">
+      <div class="contact-form__inner">
+        <h3>Как с нами связаться</h3>
+        <h4>Работаем без перерывов и выходных</h4>
+        <h4>г. Дзержинск, ул. Строителей 3</h4>
+        <h4>Телефон 1</h4>
+        <h4>Телефон 2</h4>
+        <h4>fenixselect@mail.ru</h4>
+        <div class="contact-form__sprite">
+          <a href="#">
+            <img
+              class="contact-form__img"
+              src="/assets/telegram.png"
+              alt="telegram"
+            />
+          </a>
+          <a href="#">
+            <img
+              class="contact-form__img"
+              src="/assets/instagram.png"
+              alt="instagram"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="contact-form__inner" id="contact-form-id">
+        <form id="tg">
+          <div class="form-group">
+            <label for="name1">Имя</label>
+            <input
+              required
+              type="name"
+              class="form-control"
+              id="name1"
+              placeholder="Имя"
+              name="name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone1">Номер телефона</label>
+            <input
+              required
+              type="phone"
+              class="form-control"
+              id="phone1"
+              placeholder="Телефон"
+              name="phone"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email1">Почта</label>
+            <input
+              required
+              type="email"
+              class="form-control"
+              id="email1"
+              placeholder="Почта"
+              name="email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="text1">Текс</label>
+            <textarea
+              class="form-control"
+              type="text"
+              id="text1"
+              name="text"
+              rows="3"
+              placeholder="..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary mt-2">Отправить</button>
+
+          <div
+            id="success"
+            class="alert alert-success mt-2"
+            role="alert"
+            style="display: none"
+          ></div>
+          <div
+            id="fail"
+            class="alert alert-danger mt-2"
+            role="alert"
+            style="display: none"
+          ></div>
+        </form>
+      </div>
+    </section>
+    <section class="certificates">
+      <div>Сертификаты</div>
+      <div class="certificates__inner">
+        <a href="#">
+          <img class="footer-img" src="/assets/telegram.png" alt="telegram" />
+        </a>
+        <a href="#">
+          <img class="footer-img" src="/assets/instagram.png" alt="instagram" />
+        </a>
+      </div>
+    </section>
+    <section class="map">
+      <div class="map__inner">
+        <h2>Как нас найти</h2>
+      </div>
+      <div class="map__inner">
+        <iframe
+          class="googleMap"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37803.32089964254!2d27.095542645844375!3d53.68783734319635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d9641bc0ffec43%3A0x20f655599a14c90b!2z0JTQt9C10YDQttC40L3RgdC6!5e0!3m2!1sru!2sby!4v1666876624272!5m2!1sru!2sby"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="map__inner">
+        <h3>г. Дзержинск, ул. Строителей 3</h3>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="dropdown">
+        <h2>Часто задаваемые вопросы</h2>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Чем наша мука лучше?</button>
+        <div class="dropdown-content">
+          <p class="text">
+            Секрет нашей муки в высококачественном сырье, бережной и щадящей его
+            обработке. Попробовав изделие из нашей муки, вы не захотите
+            возвращаться к продукции, которую пробовали раньше.
+          </p>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Почему такие низкие цены?</button>
+        <div class="dropdown-content">
+          <p class="text">
+            Благодаря тщательному подбору поставщиков сырья и любви к своему
+            делу, нам удалось выйти на доступную стоимость конечного продукта.
+          </p>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Есть ли у вас скидки?</button>
+        <div class="dropdown-content">
+          <p class="text">
+            Да, для всех наших постоянных клиентов мы подготовили гибкую систему
+            скидок.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer__inner">
+        <h1>ISTOKI</h1>
+      </div>
+      <div class="footer__inner">
+        <a href="#">
+          <img class="footer-img" src="/assets/telegram.png" alt="telegram" />
+        </a>
+        <a href="#">
+          <img class="footer-img" src="/assets/instagram.png" alt="instagram" />
+        </a>
+      </div>
+    </section>
+  </body>
 </html>
