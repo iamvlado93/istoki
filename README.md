@@ -1,2 +1,2 @@
 # istoki
-Flour landing
+https://iamvlado93.github.io/istoki/
