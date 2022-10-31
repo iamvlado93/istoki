@@ -10,22 +10,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   &__links {
     display: flex;
     list-style-type: none;
   }
   &__links li {
-    margin-left: 2vw;
+    margin-left: 0.5vw;
+    font-size: 12px;
   }
   &__button {
-    width: 100px;
-    padding: 5px;
-    border-radius: 12px;
-    background-color: transparent;
-    border: transparent;
-    color: white;
-    box-shadow: 0 1px 10px (rgb(255, 255, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 60px;
+      height: 45px;
+      cursor: pointer;
+    }
   }
   &__button:hover {
     transition: 0.5s ease-in-out;
@@ -45,5 +48,18 @@ a:hover {
 .logo {
   width: 90px;
   height: 90px;
-  margin: 1vw;
+  margin: 0.5vw;
+}
+
+@media only screen and (max-width: 716px) {
+  .header {
+    justify-content: space-between;
+    &__logo,
+    &__button {
+      padding: 0px 10px 0px 10px;
+    }
+    &__links {
+      display: none;
+    }
+  }
 }

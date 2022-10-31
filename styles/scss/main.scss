@@ -26,4 +26,39 @@ a,
 p {
   color: white;
   text-decoration: none;
+  text-align: center;
+  margin: 0 10px 0 10px;
+}
+
+p {
+  font-size: 11px;
+}
+
+span {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+  .image {
+    width: 60vw;
+    height: 35vh;
+  }
+}
+
+@media only screen and (max-width: 695px) {
+  .image {
+    width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .image {
+    height: 28vh;
+  }
+}
+
+@media only screen and (max-width: 363px) {
+  .image {
+    height: 16vh;
+  }
 }

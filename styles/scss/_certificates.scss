@@ -2,9 +2,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 100vh;
   background: url("/assets/paper.jpg");
   background-size: cover;
   background-position: center;
+  &__inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.image {
+  margin: 10px;
+  width: 400px;
+  height: 260px;
+}
+
+@media only screen and (max-width: 874px) {
+  .certificates {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }

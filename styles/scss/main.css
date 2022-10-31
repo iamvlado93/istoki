@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   width: 100%;
   height: 15vh;
@@ -11,22 +12,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .header__links {
   display: flex;
   list-style-type: none;
 }
 .header__links li {
-  margin-left: 2vw;
+  margin-left: 0.5vw;
+  font-size: 12px;
 }
 .header__button {
-  width: 100px;
-  padding: 5px;
-  border-radius: 12px;
-  background-color: transparent;
-  border: transparent;
-  color: white;
-  box-shadow: 0 1px 10px rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__button img {
+  width: 60px;
+  height: 45px;
+  cursor: pointer;
 }
 .header__button:hover {
   transition: 0.5s ease-in-out;
@@ -45,9 +49,20 @@ a:hover {
 .logo {
   width: 90px;
   height: 90px;
-  margin: 1vw;
+  margin: 0.5vw;
 }
 
+@media only screen and (max-width: 716px) {
+  .header {
+    justify-content: space-between;
+  }
+  .header__logo, .header__button {
+    padding: 0px 10px 0px 10px;
+  }
+  .header__links {
+    display: none;
+  }
+}
 .about {
   display: flex;
   align-items: center;
@@ -85,7 +100,6 @@ a:hover {
 
 .swiper {
   width: 550px;
-  height: 95vh;
 }
 
 .container {
@@ -111,8 +125,8 @@ section .card .image {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
-  width: 240px;
+  height: 40vh;
+  width: 25vw;
   padding: 3px;
 }
 
@@ -123,7 +137,7 @@ section .card .image {
 }
 
 .image img {
-  height: 100%;
+  height: 90%;
 }
 
 section .card .image img {
@@ -138,13 +152,14 @@ section .card .image img {
 }
 
 .card .flour-text {
-  width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
-.flour-text h4 {
-  font-size: 11px;
+.flour-text {
+  width: 350px;
+  text-align: center;
+  margin: 10px 15px 25px 15px;
 }
 
 .swiper-pagination {
@@ -204,6 +219,7 @@ section .card .image img {
 
 .production-gallery {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -231,8 +247,11 @@ section .card .image img {
 .contact-form {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   background: linear-gradient(rgba(151, 145, 145, 0.6), rgba(0, 0, 0, 0.7)), url("/assets/bg.jpg");
   background-size: cover;
   background-position: center;
@@ -242,10 +261,8 @@ section .card .image img {
 .contact-form__inner {
   width: 35%;
   max-width: 500px;
-  height: 450px;
   vertical-align: top;
   margin: 10px;
-  padding: 10px;
   border-radius: 5px;
   text-align: left;
   color: white;
@@ -253,23 +270,62 @@ section .card .image img {
 .contact-form__inner h4 {
   margin-top: 12px;
 }
+.contact-form__sprite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .contact-form__img {
   width: 40px;
   height: 40px;
   margin-top: 10px;
 }
 
+.form-group,
+button {
+  margin: 5px;
+}
+
+@media only screen and (max-width: 874px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-form__inner {
+    width: 80vw;
+  }
+}
 .certificates {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 100vh;
   background: url("/assets/paper.jpg");
   background-size: cover;
   background-position: center;
 }
+.certificates__inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
 
+.image {
+  margin: 10px;
+  width: 400px;
+  height: 260px;
+}
+
+@media only screen and (max-width: 874px) {
+  .certificates__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 .map {
   display: flex;
   flex-direction: column;
@@ -286,65 +342,81 @@ section .card .image img {
 }
 
 .googleMap {
-  width: 60vw;
+  width: 80vw;
   height: 40vh;
 }
 
 .faq {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("/assets/paper.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  justify-content: space-evenly;
 }
-
-.dropbtn {
-  width: 65vw;
-  background-color: transparent;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+.faq__title {
+  margin: 30px 0;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+  text-align: center;
+}
+
+.collapsible {
+  width: 660px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  box-shadow: 0px 2px 5px rgb(255, 255, 255);
+}
+
+.collapsible:after {
+  content: "+";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "−";
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  margin-bottom: 30px;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent;
+  width: 660px;
 }
 
 .text {
-  margin: 10px;
+  font-size: 15px;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+@media only screen and (max-width: 874px) {
+  .faq {
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+  .dropdown,
+.collapsible,
+.dropdown-content {
+    width: 90vw;
+  }
+  .text {
+    text-align: left;
+    font-size: 13px;
+  }
 }
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: rgba(241, 243, 241, 0.062745098);
-}
-
 .footer {
   display: flex;
   align-items: center;
@@ -382,4 +454,36 @@ a,
 p {
   color: white;
   text-decoration: none;
+  text-align: center;
+  margin: 0 10px 0 10px;
+}
+
+p {
+  font-size: 11px;
+}
+
+span {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+  .image {
+    width: 60vw;
+    height: 35vh;
+  }
+}
+@media only screen and (max-width: 695px) {
+  .image {
+    width: 85vw;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .image {
+    height: 28vh;
+  }
+}
+@media only screen and (max-width: 363px) {
+  .image {
+    height: 16vh;
+  }
 }/*# sourceMappingURL=main.css.map */

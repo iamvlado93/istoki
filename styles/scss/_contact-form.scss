@@ -1,8 +1,9 @@
 .contact-form {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  max-height: fit-content;
   background: linear-gradient(rgba(151, 145, 145, 0.6), rgba(0, 0, 0, 0.7)),
     url("/assets/bg.jpg");
   background-size: cover;
@@ -12,10 +13,8 @@
   &__inner {
     width: 35%;
     max-width: 500px;
-    height: 450px;
     vertical-align: top;
     margin: 10px;
-    padding: 10px;
     border-radius: 5px;
     text-align: left;
     color: white;
@@ -23,9 +22,30 @@
   &__inner h4 {
     margin-top: 12px;
   }
+  &__sprite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   &__img {
     width: 40px;
     height: 40px;
     margin-top: 10px;
+  }
+}
+
+.form-group,
+button {
+  margin: 5px;
+}
+
+@media only screen and (max-width: 874px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__inner {
+      width: 80vw;
+    }
   }
 }
