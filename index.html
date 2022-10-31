@@ -29,33 +29,35 @@
       </div>
       <div class="header__links">
         <li>
-          <a href="#">О нас</a>
+          <a href="#about">О нас</a>
         </li>
         <li>
-          <a href="#">Продукция</a>
+          <a href="#flour">Продукция</a>
         </li>
         <li>
-          <a href="#">Производство</a>
+          <a href="#production">Производство</a>
         </li>
         <li>
-          <a href="#">Сертификаты</a>
+          <a href="#certificates">Сертификаты</a>
         </li>
         <li>
-          <a href="#">Контакты</a>
+          <a href="#contact-form">Контакты</a>
         </li>
       </div>
 
-      <button class="header__button">Связаться</button>
+      <div class="header__button">
+        <img src="/assets/phone.png" alt="phone" />
+      </div>
     </header>
 
     <!-- About -->
 
-    <section class="about">
+    <section id="about" class="about">
       <div class="about-container">
-        <h1 class="about__title">
+        <h2 class="about__title">
           Цельносмолотая мука из зерна наших проверенных партнеров. Производим
           муку на мельницах с каменными жерновами из восточного Тироля (Австрия)
-        </h1>
+        </h2>
         <p class="about__text">
           Наша мука - возврат к истокам. Сохраняем лучшее, что есть в зерне
         </p>
@@ -64,7 +66,7 @@
 
     <!-- Flour  -->
 
-    <section class="flour">
+    <section id="flour" class="flour">
       <div class="swiper mySwiper container">
         <div class="swiper-wrapper content">
           <div class="swiper-slide card">
@@ -179,46 +181,116 @@
 
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
     </section>
 
     <!-- Uniqueness -->
 
     <section class="uniqueness">
-      <h3 class="uniqueness__title">
+      <h4 class="uniqueness__title">
         «Уникальность нашей продукции - в способе её производства на
         керамических жерновах, что в свою очередь наделяет муку уникальной
         вкусовой палитрой и хлебопекарными свойствами.»
-      </h3>
+      </h4>
     </section>
 
     <!-- Production -->
 
     <section class="production">
-      <h3 class="production__text">
+      <h4 class="production__text">
         Мы используем только лучшие ингредиенты и современные техники
         изготовления. Мука получена в результате разового помола зерна без
         дополнительной обработки. Продукт относится к категории здорового
         питания.
-      </h3>
+      </h4>
     </section>
 
     <!-- Gallery -->
 
-    <section class="production-gallery">Gallery</section>
+    <section id="production" class="production-gallery">
+      <div class="swiper mySwiper container">
+        <div class="swiper-wrapper content">
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="/assets/ostirole.jpg" alt="рисовая" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="/assets/ostirole2.jpg" alt="отруби" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="/assets/ostirole3.jpg" alt="пшеничная" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="/assets/ostirole4.jpg" alt="пшеничная" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="/assets/ostirole5.jpg" alt="пшеничная" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="/assets/ostirole6.jpg" alt="пшеничная" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="/assets/ostirole7.jpg" alt="пшеничная" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="/assets/ostirole8.jpg" alt="пшеничная" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="/assets/ostirole9.jpg" alt="пшеничная" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </section>
 
     <!-- Distribution -->
 
     <section class="distribution">
-      <h3 class="distribution__title">
+      <h4 class="distribution__title">
         Наша продукция представлена в магазинах здорового питания в областных
         центрах РБ.
-      </h3>
+      </h4>
     </section>
-    <section class="contact-form">
+    <section id="contact-form" class="contact-form">
       <div class="contact-form__inner">
-        <h3>Как с нами связаться</h3>
-        <h4>Работаем без перерывов и выходных</h4>
+        <h4>Как с нами связаться?</h4>
+
         <h4>г. Дзержинск, ул. Строителей 3</h4>
         <h4>Телефон 1</h4>
         <h4>Телефон 2</h4>
@@ -243,7 +315,6 @@
       <div class="contact-form__inner" id="contact-form-id">
         <form id="tg">
           <div class="form-group">
-            <label for="name1">Имя</label>
             <input
               required
               type="name"
@@ -254,7 +325,6 @@
             />
           </div>
           <div class="form-group">
-            <label for="phone1">Номер телефона</label>
             <input
               required
               type="phone"
@@ -265,7 +335,6 @@
             />
           </div>
           <div class="form-group">
-            <label for="email1">Почта</label>
             <input
               required
               type="email"
@@ -276,7 +345,6 @@
             />
           </div>
           <div class="form-group">
-            <label for="text1">Текс</label>
             <textarea
               class="form-control"
               type="text"
@@ -288,36 +356,31 @@
           </div>
 
           <button type="submit" class="btn btn-primary mt-2">Отправить</button>
-
-          <div
-            id="success"
-            class="alert alert-success mt-2"
-            role="alert"
-            style="display: none"
-          ></div>
-          <div
-            id="fail"
-            class="alert alert-danger mt-2"
-            role="alert"
-            style="display: none"
-          ></div>
         </form>
+        <div
+          id="success"
+          class="alert alert-success mt-2"
+          role="alert"
+          style="display: none"
+        ></div>
+        <div
+          id="fail"
+          class="alert alert-danger mt-2"
+          role="alert"
+          style="display: none"
+        ></div>
       </div>
     </section>
-    <section class="certificates">
-      <div>Сертификаты</div>
+    <section id="certificates" class="certificates">
+      <h4>Сертификаты</h4>
       <div class="certificates__inner">
-        <a href="#">
-          <img class="footer-img" src="/assets/telegram.png" alt="telegram" />
-        </a>
-        <a href="#">
-          <img class="footer-img" src="/assets/instagram.png" alt="instagram" />
-        </a>
+        <img class="image" src="/assets/certificate.jpg" alt="telegram" />
+        <img class="image" src="/assets/certificate.jpg" alt="telegram" />
       </div>
     </section>
     <section class="map">
       <div class="map__inner">
-        <h2>Как нас найти</h2>
+        <h4>Как нас найти</h4>
       </div>
       <div class="map__inner">
         <iframe
@@ -329,15 +392,15 @@
         ></iframe>
       </div>
       <div class="map__inner">
-        <h3>г. Дзержинск, ул. Строителей 3</h3>
+        <h4>г. Дзержинск, ул. Строителей 3</h4>
       </div>
     </section>
     <section class="faq">
-      <div class="dropdown">
-        <h2>Часто задаваемые вопросы</h2>
+      <div class="faq__title">
+        <h4>Часто задаваемые вопросы</h4>
       </div>
       <div class="dropdown">
-        <button class="dropbtn">Чем наша мука лучше?</button>
+        <button class="collapsible">Чем наша мука лучше?</button>
         <div class="dropdown-content">
           <p class="text">
             Секрет нашей муки в высококачественном сырье, бережной и щадящей его
@@ -347,7 +410,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropbtn">Почему такие низкие цены?</button>
+        <button class="collapsible">Почему такие низкие цены?</button>
         <div class="dropdown-content">
           <p class="text">
             Благодаря тщательному подбору поставщиков сырья и любви к своему
@@ -356,7 +419,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropbtn">Есть ли у вас скидки?</button>
+        <button class="collapsible">Есть ли у вас скидки?</button>
         <div class="dropdown-content">
           <p class="text">
             Да, для всех наших постоянных клиентов мы подготовили гибкую систему
@@ -367,7 +430,7 @@
     </section>
     <section class="footer">
       <div class="footer__inner">
-        <h1>ISTOKI</h1>
+        <h4>ISTOKI</h4>
       </div>
       <div class="footer__inner">
         <a href="#">
