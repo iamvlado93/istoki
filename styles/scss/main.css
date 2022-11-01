@@ -90,7 +90,7 @@ a:hover {
 
 .flour {
   height: 100vh;
-  background-image: url("/assets/paper.jpg");
+  background-image: url("../../assets/paper.jpg");
   background-size: cover;
   display: flex;
   position: relative;
