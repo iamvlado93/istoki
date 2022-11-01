@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-image: url("../../assets/paper.jpg");
+  background-image: url("./assets/paper.jpg");
   background-size: cover;
 }
 .header__logo {
@@ -68,7 +68,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   height: 85vh;
-  background: linear-gradient(rgba(151, 145, 145, 0.6), rgba(0, 0, 0, 0.7)), url("/assets/main.jpg");
+  background: linear-gradient(rgba(151, 145, 145, 0.6), rgba(0, 0, 0, 0.7)), url("./assets/main.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -90,7 +90,7 @@ a:hover {
 
 .flour {
   height: 100vh;
-  background-image: url("../../assets/paper.jpg");
+  background-image: url("./assets/paper.jpg");
   background-size: cover;
   display: flex;
   position: relative;
@@ -191,7 +191,7 @@ section .card .image img {
   align-items: center;
   justify-content: center;
   height: 50vh;
-  background: linear-gradient(rgba(151, 145, 145, 0.6), rgba(0, 0, 0, 0.7)), url("/assets/bg.jpg");
+  background: linear-gradient(rgba(151, 145, 145, 0.6), rgba(0, 0, 0, 0.7)), url("./assets/bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -208,7 +208,7 @@ section .card .image img {
   align-items: center;
   justify-content: center;
   height: 50vh;
-  background: url("/assets/paper.jpg");
+  background: url("./assets/paper.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -223,7 +223,7 @@ section .card .image img {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(rgba(151, 145, 145, 0.6), rgba(0, 0, 0, 0.7)), url("/assets/bg.jpg");
+  background: linear-gradient(rgba(151, 145, 145, 0.6), rgba(0, 0, 0, 0.7)), url("./assets/bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -235,7 +235,7 @@ section .card .image img {
   align-items: center;
   justify-content: center;
   height: 50vh;
-  background: url("/assets/paper.jpg");
+  background: url("./assets/paper.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -252,7 +252,7 @@ section .card .image img {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
-  background: linear-gradient(rgba(151, 145, 145, 0.6), rgba(0, 0, 0, 0.7)), url("/assets/bg.jpg");
+  background: linear-gradient(rgba(151, 145, 145, 0.6), rgba(0, 0, 0, 0.7)), url("./assets/bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -302,7 +302,7 @@ button {
   align-items: center;
   justify-content: space-evenly;
   height: 100vh;
-  background: url("/assets/paper.jpg");
+  background: url("./assets/paper.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -332,7 +332,7 @@ button {
   align-items: center;
   justify-content: space-evenly;
   height: 100vh;
-  background: linear-gradient(rgba(151, 145, 145, 0.6), rgba(0, 0, 0, 0.7)), url("/assets/bg.jpg");
+  background: linear-gradient(rgba(151, 145, 145, 0.6), rgba(0, 0, 0, 0.7)), url("./assets/bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -348,7 +348,7 @@ button {
 
 .faq {
   min-height: 100vh;
-  background-image: url("/assets/paper.jpg");
+  background-image: url("./assets/paper.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -422,7 +422,7 @@ button {
   align-items: center;
   justify-content: space-evenly;
   height: 15vh;
-  background: linear-gradient(rgba(151, 145, 145, 0.6), rgba(0, 0, 0, 0.7)), url("/assets/bg.jpg");
+  background: linear-gradient(rgba(151, 145, 145, 0.6), rgba(0, 0, 0, 0.7)), url("./assets/bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
