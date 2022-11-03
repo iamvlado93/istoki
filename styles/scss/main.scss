@@ -20,6 +20,15 @@ body {
 h1,
 h2,
 h3,
+h4 {
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
 h4,
 span,
 a,
@@ -27,7 +36,8 @@ p {
   color: white;
   text-decoration: none;
   text-align: center;
-  margin: 0 10px 0 10px;
+  margin: 0 5px 0 5px;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -53,12 +63,12 @@ span {
 
 @media only screen and (max-width: 525px) {
   .image {
-    height: 28vh;
+    height: 34vh;
   }
 }
 
 @media only screen and (max-width: 363px) {
   .image {
-    height: 16vh;
+    height: 20vh;
   }
 }

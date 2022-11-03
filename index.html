@@ -11,6 +11,12 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -23,9 +29,25 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="header__logo">
-        <img class="logo" src="./assets/logo.png" alt="logo" />
-        <h4>ISTOKI</h4>
+      <div class="navbar">
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="menu-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">blogs</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">contact</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="header__button">
+        <img src="./assets/phone.png" alt="phone" />
       </div>
       <div class="header__links">
         <li>
@@ -44,24 +66,22 @@
           <a href="#contact-form">Контакты</a>
         </li>
       </div>
-
-      <div class="header__button">
-        <img src="./assets/phone.png" alt="phone" />
+      <div class="header__logo">
+        <h4>ISTOKI</h4>
+        <img class="logo" src="./assets/logo.png" alt="logo" />
       </div>
     </header>
 
     <!-- About -->
 
     <section id="about" class="about">
-      <div class="about-container">
-        <h2 class="about__title">
-          Цельносмолотая мука из зерна наших проверенных партнеров. Производим
-          муку на мельницах с каменными жерновами из восточного Тироля (Австрия)
-        </h2>
-        <p class="about__text">
-          Наша мука - возврат к истокам. Сохраняем лучшее, что есть в зерне
-        </p>
-      </div>
+      <h2 class="about__title">
+        Цельносмолотая мука из зерна наших проверенных партнеров. Производим
+        муку на мельницах с каменными жерновами из восточного Тироля (Австрия)
+      </h2>
+      <p class="about__text">
+        Наша мука - возврат к истокам. Сохраняем лучшее, что есть в зерне
+      </p>
     </section>
 
     <!-- Flour  -->
@@ -374,8 +394,18 @@
     <section id="certificates" class="certificates">
       <h4>Сертификаты</h4>
       <div class="certificates__inner">
-        <img class="image" src="./assets/certificate.jpg" alt="certificate1" />
-        <img class="image" src="./assets/certificate.jpg" alt="certificate2" />
+        <img
+          class="image"
+          id="image-certificate"
+          src="./assets/certificate.jpg"
+          alt="certificate1"
+        />
+        <img
+          id="image-certificate"
+          class="image"
+          src="./assets/certificate.jpg"
+          alt="certificate2"
+        />
       </div>
     </section>
     <section class="map">
